@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mariana.mylayout.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/astronauta"
+        android:id="@+id/mariapps">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mariapp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:layout_gravity="bottom"
+            android:textColor="#f4fcf5"
+            android:text="Name:"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fc13f8"
+            android:textColorHint="#57994a"
+            android:hint="Enter your name"
+            android:id="@+id/nombre"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:textColor="#f9fbfd"
+            android:text="Password:"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fc13f8"
+            android:textColorHint="#4b8144"
+            android:hint="Enter your hotmail"
+            android:id="@+id/correo"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/botonLogin" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/badLogin"
+            android:text="wrong password!"
+            android:textColor="#a7d225"
+            android:textSize="20pt"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correctLogiin"
+            android:text="correct password!"
+            android:textColor="#a7d225"
+            android:textSize="20pt"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
